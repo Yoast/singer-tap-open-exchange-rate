@@ -43,7 +43,7 @@ class OpenExchange(object):  # noqa: WPS230
         self.api_key: str = api_key
         self.logger: logging.Logger = singer.get_logger()
 
-    def exchange_base_USD(  # noqa: WPS210, WPS213
+    def exchange_rate_USD(  # noqa: WPS210, WPS213
         self,
         **kwargs: dict,
     ) -> Generator[dict, None, None]:
@@ -66,7 +66,7 @@ class OpenExchange(object):  # noqa: WPS230
             raise ValueError('The parameter start_date is required.')
 
         # Get the Cleaner
-        cleaner: Callable = CLEANERS.get('exchange_base_USD', {})
+        cleaner: Callable = CLEANERS.get('exchange_rate_USD', {})
 
         # Create Header with Auth Token
         # self._create_headers()

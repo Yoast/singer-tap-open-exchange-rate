@@ -90,7 +90,7 @@ def clean_row(row: dict, mapping: dict) -> dict:
     return cleaned
 
 
-def clean_exchange_base_USD(
+def clean_exchange_rate_USD(
     date_day: str,
     response_data: dict,
 ) -> dict:
@@ -103,7 +103,7 @@ def clean_exchange_base_USD(
         dict -- cleaned response_data
     """
     # Get the mapping from the STREAMS
-    mapping: Optional[dict] = STREAMS['exchange_base_USD'].get(
+    mapping: Optional[dict] = STREAMS['exchange_rate_USD'].get(
         'mapping',
     )
 
@@ -298,5 +298,5 @@ def flatten(d, parent_key='', sep='_'):
 
 # Collect all cleaners
 CLEANERS: MappingProxyType = MappingProxyType({
-    'exchange_base_USD': clean_exchange_base_USD,
+    'exchange_rate_USD': clean_exchange_rate_USD,
 })

@@ -41,12 +41,12 @@ def main() -> None:
         # Load the catalog
         catalog = discover()
 
-    # Initialize postmark client
-    open_exchange: OpenExchange = OpenExchange(
+    # Initialize Open Exchange client
+    exchange_rate_USD: OpenExchange = OpenExchange(
         args.config['api_key'],
     )
 
-    sync(open_exchange, args.state, catalog, args.config['start_date'])
+    sync(exchange_rate_USD, args.state, catalog, args.config['start_date'])
 
 
 if __name__ == '__main__':
