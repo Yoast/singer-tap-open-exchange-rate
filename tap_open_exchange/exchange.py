@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import logging
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone, date
 from types import MappingProxyType
 from typing import Generator, Optional, Callable, List
 
@@ -103,6 +103,7 @@ class OpenExchange(object):  # noqa: WPS230
 
             # Yield Cleaned results
             yield cleaner(date_day, response_data)
+
     def _start_days_till_now(self, start_date: str) -> Generator:
         """Yield YYYY/MM/DD for every day until now.
         Arguments:
