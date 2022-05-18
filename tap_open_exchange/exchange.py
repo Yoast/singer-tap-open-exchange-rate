@@ -9,7 +9,7 @@ from typing import Generator, Optional, Callable, List
 import httpx
 import singer
 from dateutil.parser import isoparse
-from dateutil.rrule import WEEKLY, rrule
+from dateutil.rrule import DAILY, rrule
 
 from tap_open_exchange.cleaners import CLEANERS
 
@@ -103,6 +103,30 @@ class OpenExchange(object):  # noqa: WPS230
 
             # Yield Cleaned results
             yield cleaner(date_day, response_data)
+    def _start_days_till_now(self, start_date: str) -> Generator:
+        """Yield YYYY/MM/DD for every day until now.
+        Arguments:
+            start_date {str} -- Start date e.g. 2020-01-01
+        Yields:
+            Generator -- Every day until now.
+        """
+        # Parse input date
+        year: int = int(start_date.split('-')[0])
+        month: int = int(start_date.split('-')[1].lstrip())
+        day: int = int(start_date.split('-')[2].lstrip())
+
+        # Setup start period
+        period: date = date(year, month, day)
+
+        # Setup itterator
+        dates: rrule = rrule(
+            freq=DAILY,
+            dtstart=period,
+            until=datetime.utcnow(),
+        )
+
+        # Yield dates in YYYY-MM-DD format
+        yield from (date_day.strftime('%Y-%m-%d') for date_day in dates)
 
     # def _create_headers(self) -> None:
     #     """Create authenticationn headers for requests."""
