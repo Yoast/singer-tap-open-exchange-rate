@@ -13,6 +13,7 @@ from dateutil.rrule import WEEKLY, rrule
 
 from tap_open_exchange.cleaners import CLEANERS
 
+
 API_SCHEME: str = 'https://'
 API_BASE_URL: str = 'openexchangerates.org/'
 API_TYPE: str = 'api/historical/'
