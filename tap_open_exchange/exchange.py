@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone, date
 from types import MappingProxyType
 from typing import Generator, Optional, Callable, List
 
-import httpx
+import requests
 import singer
 from dateutil.parser import isoparse
 from dateutil.rrule import DAILY, rrule
@@ -90,13 +90,15 @@ class OpenExchange(object):  # noqa: WPS230
                 f'{API_RESPONSE_TYPE}{API_KEY_VAR}{API_KEY}{API_XCHANGE_VAR}{base_var}'
             )
 
-            # Make the call to Postmark API
-            response: httpx._models.Response = self.client.get(  # noqa: WPS437
-                url
-            )
+            # # Make the call to Postmark API
+            # response: httpx._models.Response = self.client.get(  # noqa: WPS437
+            #     url
+            # )
 
-            # Raise error on 4xx and 5xxx
-            response.raise_for_status()
+            response = requests.get(url)
+
+            # # Raise error on 4xx and 5xxx
+            # response.raise_for_status()
 
             # Create dictionary from response
             response_data: dict = response.json()
