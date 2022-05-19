@@ -14,6 +14,7 @@ setup(
         'httpx[http2]~=0.16.1',
         'python-dateutil~=2.8.1',
         'singer-python~=5.10.0',
+        'requests~=2.27.1',
     ],
     entry_points="""
         [console_scripts]
