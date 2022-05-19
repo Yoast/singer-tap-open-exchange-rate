@@ -5,7 +5,7 @@ import collections
 from types import MappingProxyType
 from tap_open_exchange.streams import STREAMS
 from typing import Any, Optional
-
+from datetime import datetime, timezone
 
 class ConvertionError(ValueError):
     """Failed to convert value."""
