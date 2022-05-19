@@ -87,7 +87,7 @@ class OpenExchange(object):  # noqa: WPS230
             # Build URL
             url: str = (
                 f'{API_SCHEME}{API_BASE_URL}{API_TYPE}{from_to_date}'
-                f'{API_RESPONSE_TYPE}{API_KEY_VAR}{API_KEY}{API_XCHANGE_VAR}{base_var}'
+                f'{API_RESPONSE_TYPE}{API_KEY_VAR}{self.api_key}{API_XCHANGE_VAR}{base_var}'
             )
 
             self.logger.info(f'~~~~~URL: {url}')
