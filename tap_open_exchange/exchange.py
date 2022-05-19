@@ -81,7 +81,7 @@ class OpenExchange(object):  # noqa: WPS230
             )
 
             self.logger.info(
-                f'Recieving exchange rates from {date_day}'
+                f'Retreiving exchange rates from {date_day}'
             )
 
             # Build URL
