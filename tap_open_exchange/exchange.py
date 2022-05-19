@@ -90,6 +90,7 @@ class OpenExchange(object):  # noqa: WPS230
                 f'{API_RESPONSE_TYPE}{API_KEY_VAR}{API_KEY}{API_XCHANGE_VAR}{base_var}'
             )
 
+            self.logger.info(f'~~~~~URL: {url}')
             # # Make the call to Postmark API
             # response: httpx._models.Response = self.client.get(  # noqa: WPS437
             #     url
@@ -102,6 +103,7 @@ class OpenExchange(object):  # noqa: WPS230
 
             # Create dictionary from response
             response_data: dict = response.json()
+            self.logger.info(f'^^^^^^^Response: {response_data}')
 
             # Yield Cleaned results
             yield cleaner(date_day, response_data)
