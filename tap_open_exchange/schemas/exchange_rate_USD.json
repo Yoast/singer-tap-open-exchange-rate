@@ -13,7 +13,10 @@
             "type": "string"
         },
         "rates": {
-            "type": "object",
+            "type": [
+                "null",
+                "object"
+            ],
             "additionalProperties": false,
             "properties": {
                 "AED": {
