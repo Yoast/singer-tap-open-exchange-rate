@@ -13,508 +13,508 @@
             "type": "string"
         },
         "AED": {
-            "type": "string"
+            "type": "number"
         },
         "AFN": {
-            "type": "string"
+            "type": "number"
         },
         "ALL": {
-            "type": "string"
+            "type": "number"
         },
         "AMD": {
-            "type": "string"
+            "type": "number"
         },
         "ANG": {
-            "type": "string"
+            "type": "number"
         },
         "AOA": {
-            "type": "string"
+            "type": "number"
         },
         "ARS": {
-            "type": "string"
+            "type": "number"
         },
         "AUD": {
-            "type": "string"
+            "type": "number"
         },
         "AWG": {
-            "type": "string"
+            "type": "number"
         },
         "AZN": {
-            "type": "string"
+            "type": "number"
         },
         "BAM": {
-            "type": "string"
+            "type": "number"
         },
         "BBD": {
-            "type": "string"
+            "type": "number"
         },
         "BDT": {
-            "type": "string"
+            "type": "number"
         },
         "BGN": {
-            "type": "string"
+            "type": "number"
         },
         "BHD": {
-            "type": "string"
+            "type": "number"
         },
         "BIF": {
-            "type": "string"
+            "type": "number"
         },
         "BMD": {
-            "type": "string"
+            "type": "number"
         },
         "BND": {
-            "type": "string"
+            "type": "number"
         },
         "BOB": {
-            "type": "string"
+            "type": "number"
         },
         "BRL": {
-            "type": "string"
+            "type": "number"
         },
         "BSD": {
-            "type": "string"
+            "type": "number"
         },
         "BTN": {
-            "type": "string"
+            "type": "number"
         },
         "BWP": {
-            "type": "string"
+            "type": "number"
         },
         "BYN": {
-            "type": "string"
+            "type": "number"
         },
         "BZD": {
-            "type": "string"
+            "type": "number"
         },
         "CAD": {
-            "type": "string"
+            "type": "number"
         },
         "CDF": {
-            "type": "string"
+            "type": "number"
         },
         "CHF": {
-            "type": "string"
+            "type": "number"
         },
         "CLF": {
-            "type": "string"
+            "type": "number"
         },
         "CLP": {
-            "type": "string"
+            "type": "number"
         },
         "CNH": {
-            "type": "string"
+            "type": "number"
         },
         "CNY": {
-            "type": "string"
+            "type": "number"
         },
         "COP": {
-            "type": "string"
+            "type": "number"
         },
         "CRC": {
-            "type": "string"
+            "type": "number"
         },
         "CUC": {
-            "type": "string"
+            "type": "number"
         },
         "CUP": {
-            "type": "string"
+            "type": "number"
         },
         "CVE": {
-            "type": "string"
+            "type": "number"
         },
         "CZK": {
-            "type": "string"
+            "type": "number"
         },
         "DJF": {
-            "type": "string"
+            "type": "number"
         },
         "DKK": {
-            "type": "string"
+            "type": "number"
         },
         "DOP": {
-            "type": "string"
+            "type": "number"
         },
         "DZD": {
-            "type": "string"
+            "type": "number"
         },
         "EGP": {
-            "type": "string"
+            "type": "number"
         },
         "ERN": {
-            "type": "string"
+            "type": "number"
         },
         "ETB": {
-            "type": "string"
+            "type": "number"
         },
         "EUR": {
-            "type": "string"
+            "type": "number"
         },
         "FJD": {
-            "type": "string"
+            "type": "number"
         },
         "FKP": {
-            "type": "string"
+            "type": "number"
         },
         "GBP": {
-            "type": "string"
+            "type": "number"
         },
         "GEL": {
-            "type": "string"
+            "type": "number"
         },
         "GGP": {
-            "type": "string"
+            "type": "number"
         },
         "GHS": {
-            "type": "string"
+            "type": "number"
         },
         "GIP": {
-            "type": "string"
+            "type": "number"
         },
         "GMD": {
-            "type": "string"
+            "type": "number"
         },
         "GNF": {
-            "type": "string"
+            "type": "number"
         },
         "GTQ": {
-            "type": "string"
+            "type": "number"
         },
         "GYD": {
-            "type": "string"
+            "type": "number"
         },
         "HKD": {
-            "type": "string"
+            "type": "number"
         },
         "HNL": {
-            "type": "string"
+            "type": "number"
         },
         "HRK": {
-            "type": "string"
+            "type": "number"
         },
         "HTG": {
-            "type": "string"
+            "type": "number"
         },
         "HUF": {
-            "type": "string"
+            "type": "number"
         },
         "IDR": {
-            "type": "string"
+            "type": "number"
         },
         "ILS": {
-            "type": "string"
+            "type": "number"
         },
         "IMP": {
-            "type": "string"
+            "type": "number"
         },
         "INR": {
-            "type": "string"
+            "type": "number"
         },
         "IQD": {
-            "type": "string"
+            "type": "number"
         },
         "IRR": {
-            "type": "string"
+            "type": "number"
         },
         "ISK": {
-            "type": "string"
+            "type": "number"
         },
         "JEP": {
-            "type": "string"
+            "type": "number"
         },
         "JMD": {
-            "type": "string"
+            "type": "number"
         },
         "JOD": {
-            "type": "string"
+            "type": "number"
         },
         "JPY": {
-            "type": "string"
+            "type": "number"
         },
         "KES": {
-            "type": "string"
+            "type": "number"
         },
         "KGS": {
-            "type": "string"
+            "type": "number"
         },
         "KHR": {
-            "type": "string"
+            "type": "number"
         },
         "KMF": {
-            "type": "string"
+            "type": "number"
         },
         "KPW": {
-            "type": "string"
+            "type": "number"
         },
         "KRW": {
-            "type": "string"
+            "type": "number"
         },
         "KWD": {
-            "type": "string"
+            "type": "number"
         },
         "KYD": {
-            "type": "string"
+            "type": "number"
         },
         "KZT": {
-            "type": "string"
+            "type": "number"
         },
         "LAK": {
-            "type": "string"
+            "type": "number"
         },
         "LBP": {
-            "type": "string"
+            "type": "number"
         },
         "LKR": {
-            "type": "string"
+            "type": "number"
         },
         "LRD": {
-            "type": "string"
+            "type": "number"
         },
         "LSL": {
-            "type": "string"
+            "type": "number"
         },
         "LYD": {
-            "type": "string"
+            "type": "number"
         },
         "MAD": {
-            "type": "string"
+            "type": "number"
         },
         "MDL": {
-            "type": "string"
+            "type": "number"
         },
         "MGA": {
-            "type": "string"
+            "type": "number"
         },
         "MKD": {
-            "type": "string"
+            "type": "number"
         },
         "MMK": {
-            "type": "string"
+            "type": "number"
         },
         "MNT": {
-            "type": "string"
+            "type": "number"
         },
         "MOP": {
-            "type": "string"
+            "type": "number"
         },
         "MRU": {
-            "type": "string"
+            "type": "number"
         },
         "MUR": {
-            "type": "string"
+            "type": "number"
         },
         "MVR": {
-            "type": "string"
+            "type": "number"
         },
         "MWK": {
-            "type": "string"
+            "type": "number"
         },
         "MXN": {
-            "type": "string"
+            "type": "number"
         },
         "MYR": {
-            "type": "string"
+            "type": "number"
         },
         "MZN": {
-            "type": "string"
+            "type": "number"
         },
         "NAD": {
-            "type": "string"
+            "type": "number"
         },
         "NGN": {
-            "type": "string"
+            "type": "number"
         },
         "NIO": {
-            "type": "string"
+            "type": "number"
         },
         "NOK": {
-            "type": "string"
+            "type": "number"
         },
         "NPR": {
-            "type": "string"
+            "type": "number"
         },
         "NZD": {
-            "type": "string"
+            "type": "number"
         },
         "OMR": {
-            "type": "string"
+            "type": "number"
         },
         "PAB": {
-            "type": "string"
+            "type": "number"
         },
         "PEN": {
-            "type": "string"
+            "type": "number"
         },
         "PGK": {
-            "type": "string"
+            "type": "number"
         },
         "PHP": {
-            "type": "string"
+            "type": "number"
         },
         "PKR": {
-            "type": "string"
+            "type": "number"
         },
         "PLN": {
-            "type": "string"
+            "type": "number"
         },
         "PYG": {
-            "type": "string"
+            "type": "number"
         },
         "QAR": {
-            "type": "string"
+            "type": "number"
         },
         "RON": {
-            "type": "string"
+            "type": "number"
         },
         "RSD": {
-            "type": "string"
+            "type": "number"
         },
         "RUB": {
-            "type": "string"
+            "type": "number"
         },
         "RWF": {
-            "type": "string"
+            "type": "number"
         },
         "SAR": {
-            "type": "string"
+            "type": "number"
         },
         "SBD": {
-            "type": "string"
+            "type": "number"
         },
         "SCR": {
-            "type": "string"
+            "type": "number"
         },
         "SDG": {
-            "type": "string"
+            "type": "number"
         },
         "SEK": {
-            "type": "string"
+            "type": "number"
         },
         "SGD": {
-            "type": "string"
+            "type": "number"
         },
         "SHP": {
-            "type": "string"
+            "type": "number"
         },
         "SLL": {
-            "type": "string"
+            "type": "number"
         },
         "SOS": {
-            "type": "string"
+            "type": "number"
         },
         "SRD": {
-            "type": "string"
+            "type": "number"
         },
         "SSP": {
-            "type": "string"
+            "type": "number"
         },
         "STD": {
-            "type": "string"
+            "type": "number"
         },
         "STN": {
-            "type": "string"
+            "type": "number"
         },
         "SVC": {
-            "type": "string"
+            "type": "number"
         },
         "SYP": {
-            "type": "string"
+            "type": "number"
         },
         "SZL": {
-            "type": "string"
+            "type": "number"
         },
         "THB": {
-            "type": "string"
+            "type": "number"
         },
         "TJS": {
-            "type": "string"
+            "type": "number"
         },
         "TMT": {
-            "type": "string"
+            "type": "number"
         },
         "TND": {
-            "type": "string"
+            "type": "number"
         },
         "TOP": {
-            "type": "string"
+            "type": "number"
         },
         "TRY": {
-            "type": "string"
+            "type": "number"
         },
         "TTD": {
-            "type": "string"
+            "type": "number"
         },
         "TWD": {
-            "type": "string"
+            "type": "number"
         },
         "TZS": {
-            "type": "string"
+            "type": "number"
         },
         "UAH": {
-            "type": "string"
+            "type": "number"
         },
         "UGX": {
-            "type": "string"
+            "type": "number"
         },
         "USD": {
-            "type": "string"
+            "type": "number"
         },
         "UYU": {
-            "type": "string"
+            "type": "number"
         },
         "UZS": {
-            "type": "string"
+            "type": "number"
         },
         "VES": {
-            "type": "string"
+            "type": "number"
         },
         "VND": {
-            "type": "string"
+            "type": "number"
         },
         "VUV": {
-            "type": "string"
+            "type": "number"
         },
         "WST": {
-            "type": "string"
+            "type": "number"
         },
         "XAF": {
-            "type": "string"
+            "type": "number"
         },
         "XAG": {
-            "type": "string"
+            "type": "number"
         },
         "XAU": {
-            "type": "string"
+            "type": "number"
         },
         "XCD": {
-            "type": "string"
+            "type": "number"
         },
         "XDR": {
-            "type": "string"
+            "type": "number"
         },
         "XOF": {
-            "type": "string"
+            "type": "number"
         },
         "XPD": {
-            "type": "string"
+            "type": "number"
         },
         "XPF": {
-            "type": "string"
+            "type": "number"
         },
         "XPT": {
-            "type": "string"
+            "type": "number"
         },
         "YER": {
-            "type": "string"
+            "type": "number"
         },
         "ZAR": {
-            "type": "string"
+            "type": "number"
         },
         "ZMW": {
-            "type": "string"
+            "type": "number"
         },
         "ZWL": {
-            "type": "string"
+            "type": "number"
         }
     }
 }
