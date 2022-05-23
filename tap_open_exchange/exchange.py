@@ -102,7 +102,7 @@ class OpenExchange(object):  # noqa: WPS230
             # Create dictionary from response
             response_data: dict = response.json()
 
-            date_converted = datetime.fromtimestamp(response_data.get('timestamp'), tz=timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%f')
+            date_converted = datetime.fromtimestamp(response_data.get('timestamp'), tz=timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%fz')
 
             response_data.update({'timestamp': date_converted})
 
