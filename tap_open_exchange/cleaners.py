@@ -298,5 +298,5 @@ def flatten(d, parent_key='', sep='_'):
 
 # Collect all cleaners
 CLEANERS: MappingProxyType = MappingProxyType({
-    'exchange_rate_USD': clean_exchange_rate_EUR,
+    'exchange_rate_EUR': clean_exchange_rate_EUR,
 })
