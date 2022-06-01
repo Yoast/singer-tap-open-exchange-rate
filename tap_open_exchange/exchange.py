@@ -42,12 +42,12 @@ class OpenExchange(object):  # noqa: WPS230
         """
         self.api_key: str = api_key
         self.logger: logging.Logger = singer.get_logger()
-
-    def exchange_rate_USD(  # noqa: WPS210, WPS213
+    
+    def exchange_rate_EUR(  # noqa: WPS210, WPS213
         self,
         **kwargs: dict,
     ) -> Generator[dict, None, None]:
-        """OpenExchangeRate, USD as base currency.
+        """OpenExchangeRate, EUR as base currency.
 
         Raises:
             ValueError: When the parameter start_date is missing
@@ -55,9 +55,9 @@ class OpenExchange(object):  # noqa: WPS230
         Yields:
             Generator[dict] -- Yields daily exchange rates
         """
-        self.logger.info('Stream exchange rates from base USD')
+        self.logger.info('Stream exchange rates from base EUR')
 
-        base_var = 'USD'
+        base_var = 'EUR'
 
         # Validate the start_date value exists
         start_date_input: str = str(kwargs.get('start_date', ''))
@@ -66,7 +66,7 @@ class OpenExchange(object):  # noqa: WPS230
             raise ValueError('The parameter start_date is required.')
 
         # Get the Cleaner
-        cleaner: Callable = CLEANERS.get('exchange_rate_USD', {})
+        cleaner: Callable = CLEANERS.get('exchange_rate_EUR', {})
 
         # Create Header with Auth Token
         # self._create_headers()

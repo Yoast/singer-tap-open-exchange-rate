@@ -90,7 +90,7 @@ def clean_row(row: dict, mapping: dict) -> dict:
     return cleaned
 
 
-def clean_exchange_rate_USD(
+def clean_exchange_rate_EUR(
     date_day: str,
     response_data: dict,
 ) -> dict:
@@ -298,5 +298,5 @@ def flatten(d, parent_key='', sep='_'):
 
 # Collect all cleaners
 CLEANERS: MappingProxyType = MappingProxyType({
-    'exchange_rate_USD': clean_exchange_rate_USD,
+    'exchange_rate_USD': clean_exchange_rate_EUR,
 })

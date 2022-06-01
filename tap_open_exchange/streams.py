@@ -253,7 +253,7 @@ def date_parser(input_date: str) -> str:
 
 # Streams metadata
 STREAMS: MappingProxyType = MappingProxyType({
-    'exchange_rate_USD': {
+    'exchange_rate_EUR': {
         'key_properties': 'base',
         'replication_method': 'INCREMENTAL',
         'replication_key': 'timestamp',
@@ -770,5 +770,6 @@ STREAMS: MappingProxyType = MappingProxyType({
                 'map': 'ZWL', 'null': False,
             }
         },
+        
     },
 })
