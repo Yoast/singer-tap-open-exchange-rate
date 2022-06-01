@@ -72,7 +72,7 @@ def create_bookmark(stream_name: str, bookmark_value: str) -> str:
         str -- Created bookmark
     """
     if stream_name in {
-        'exchange_rate_USD',
+        'exchange_rate_EUR',
     }:
         # Return tomorrow's date
         tomorrow: date = datetime.strptime(
