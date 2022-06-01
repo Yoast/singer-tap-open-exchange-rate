@@ -103,7 +103,7 @@ def clean_exchange_rate_EUR(
         dict -- cleaned response_data
     """
     # Get the mapping from the STREAMS
-    mapping: Optional[dict] = STREAMS['exchange_rate_USD'].get(
+    mapping: Optional[dict] = STREAMS['exchange_rate_EUR'].get(
         'mapping',
     )
 
