@@ -466,7 +466,10 @@
             "type": "number"
         },
         "VES": {
-            "type": "number"
+            "type": [
+                "null",
+                "number"
+            ]
         },
         "VND": {
             "type": "number"
