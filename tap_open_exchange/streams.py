@@ -719,7 +719,7 @@ STREAMS: MappingProxyType = MappingProxyType({
                 'map': 'UZS', 'null': False,
             },
             'VES': {
-                'map': 'VES', 'null': False,
+                'map': 'VES', 'null': True,
             },
             'VND': {
                 'map': 'VND', 'null': False,
