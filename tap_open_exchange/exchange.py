@@ -71,7 +71,7 @@ class OpenExchange(object):  # noqa: WPS230
         # Create Header with Auth Token
         # self._create_headers()
 
-        for date_day in self._start_days_till_now(start_date_input):
+        for date_day in self._start_days_till_yesterday(start_date_input):
 
             # Replace placeholder in reports path
             from_to_date: str = API_DATE.replace(
@@ -109,7 +109,10 @@ class OpenExchange(object):  # noqa: WPS230
             # Yield Cleaned results
             yield cleaner(date_day, response_data)
 
-    def _start_days_till_now(self, start_date: str) -> Generator:
+    def _start_days_till_yesterday(
+        self,
+        start_date: str,
+    ) -> Generator:
         """Yield YYYY/MM/DD for every day until now.
         Arguments:
             start_date {str} -- Start date e.g. 2020-01-01
@@ -124,11 +127,14 @@ class OpenExchange(object):  # noqa: WPS230
         # Setup start period
         period: date = date(year, month, day)
 
+        # Calculate yesterday's date
+        yesterday = datetime.utcnow() - timedelta(days=1)
+
         # Setup itterator
         dates: rrule = rrule(
             freq=DAILY,
             dtstart=period,
-            until=datetime.utcnow(),
+            until=yesterday,
         )
 
         # Yield dates in YYYY-MM-DD format
