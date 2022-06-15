@@ -22,12 +22,6 @@ API_RESPONSE_TYPE: str = '.json'
 API_KEY_VAR: str = '?app_id='
 API_XCHANGE_VAR: str = '&base='
 
-# HEADERS: MappingProxyType = MappingProxyType({  # Frozen dictionary
-#     'Content-Type': 'application/json',
-#     'Authorization': 'Bearer :accesstoken:',
-# })
-
-
 class OpenExchange(object):  # noqa: WPS230
     """OpenExchange API Client."""
 
@@ -68,9 +62,6 @@ class OpenExchange(object):  # noqa: WPS230
         # Get the Cleaner
         cleaner: Callable = CLEANERS.get('exchange_rate_EUR', {})
 
-        # Create Header with Auth Token
-        # self._create_headers()
-
         for date_day in self._start_days_till_yesterday(start_date_input):
 
             # Replace placeholder in reports path
@@ -89,15 +80,7 @@ class OpenExchange(object):  # noqa: WPS230
                 f'{API_RESPONSE_TYPE}{API_KEY_VAR}{self.api_key}{API_XCHANGE_VAR}{base_var}'
             )
 
-            # # Make the call to Postmark API
-            # response: httpx._models.Response = self.client.get(  # noqa: WPS437
-            #     url
-            # )
-
             response = requests.get(url)
-
-            # # Raise error on 4xx and 5xxx
-            # response.raise_for_status()
 
             # Create dictionary from response
             response_data: dict = response.json()
@@ -139,12 +122,3 @@ class OpenExchange(object):  # noqa: WPS230
 
         # Yield dates in YYYY-MM-DD format
         yield from (date_day.strftime('%Y-%m-%d') for date_day in dates)
-
-    # def _create_headers(self) -> None:
-    #     """Create authenticationn headers for requests."""
-    #     headers: dict = dict(HEADERS)
-    #     headers['Authorization'] = headers['Authorization'].replace(
-    #         ':accesstoken:',
-    #         self.token,
-    #     )
-    #     self.headers = headers

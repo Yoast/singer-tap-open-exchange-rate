@@ -107,9 +107,6 @@ def clean_exchange_rate_EUR(
         'mapping',
     )
 
-    # Create Unique ID
-    # id = int(date_day.replace('-', ''))
-
     # Create new cleaned Dict
     cleaned_data: dict = {
         'timestamp': response_data.get('timestamp'),
